@@ -1,0 +1,61 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController --output-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\simulation --file-set=SIM_VERILOG --report-file=html:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.html --report-file=sopcinfo:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance.sopcinfo --report-file=csv:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.csv --report-file=spd:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.spd --report-file=cmp:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.cmp --report-file=sip:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\simulation\SPI_instance.sip --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance.qsys --remove-qsys-generate-warning
+Progress: Loading ServoController/SPI_instance.qsys
+Progress: Reading input file
+Progress: Adding spislave_0 [spislave 14.1]
+Progress: Parameterizing module spislave_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SPI_instance: Generating SPI_instance "SPI_instance" for SIM_VERILOG
+Info: spislave_0: "SPI_instance" instantiated spislave "spislave_0"
+Info: SPI_instance: Done "SPI_instance" with 2 modules, 2 files
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.spd --output-directory=D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.spd --output-directory=D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/SPI_instance/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController --output-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance --report-file=bsf:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance.qsys --remove-qsys-generate-warning
+Progress: Loading ServoController/SPI_instance.qsys
+Progress: Reading input file
+Progress: Adding spislave_0 [spislave 14.1]
+Progress: Parameterizing module spislave_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController --output-directory=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\synthesis --file-set=QUARTUS_SYNTH --report-file=html:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.html --report-file=sopcinfo:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance.sopcinfo --report-file=cmp:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.cmp --report-file=qip:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\synthesis\SPI_instance.qip --report-file=svd:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\synthesis\SPI_instance.svd --report-file=regmap:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\synthesis\SPI_instance.regmap --report-file=xml:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\SPI_instance.xml --report-file=debuginfo:D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance\synthesis\SPI_instance.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:\SeniorProject\Cloud-Car\VeriLog\QuartusProjects\ServoController\SPI_instance.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading ServoController/SPI_instance.qsys
+Progress: Reading input file
+Progress: Adding spislave_0 [spislave 14.1]
+Progress: Parameterizing module spislave_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SPI_instance: Generating SPI_instance "SPI_instance" for QUARTUS_SYNTH
+Info: spislave_0: "SPI_instance" instantiated spislave "spislave_0"
+Info: SPI_instance: Done "SPI_instance" with 2 modules, 2 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,61 @@
+EDA Netlist Writer report for ServoController
+Fri Oct 14 15:56:44 2016
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Fri Oct 14 15:56:44 2016 ;
+; Revision Name             ; ServoController                       ;
+; Top-level Entity Name     ; ServoController                       ;
+; Family                    ; Cyclone IV E                          ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+    Info: Processing started: Fri Oct 14 15:56:43 2016
+Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off ServoController -c ServoController --gen_testbench
+Info (119006): Selected device EP4CE22F17C6 for design "ServoController"
+Info (201000): Generated Verilog Test Bench File D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt for simulation
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 536 megabytes
+    Info: Processing ended: Fri Oct 14 15:56:44 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
