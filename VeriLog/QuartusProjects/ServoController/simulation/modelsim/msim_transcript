@@ -14,143 +14,139 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:25:52 on Oct 14,2016
+# Start time: 14:38:48 on Oct 15,2016
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
 # -- Compiling module pwm_generator
 # 
 # Top level modules:
 # 	pwm_generator
-# End time: 16:25:52 on Oct 14,2016, Elapsed time: 0:00:00
+# End time: 14:38:48 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:25:52 on Oct 14,2016
+# Start time: 14:38:48 on Oct 15,2016
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt 
-# -- Compiling module ServoController_vlg_tst
-# ** Error: D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt(64): near "#": syntax error, unexpected '#'
-# End time: 16:25:52 on Oct 14,2016, Elapsed time: 0:00:00
+# ** Error: (vlog-7) Failed to open design unit file "D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# End time: 14:38:48 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: D:/AlteraWindoze/14.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./ServoController_run_msim_rtl_verilog.do line 10
 # D:/AlteraWindoze/14.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
 # "vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-C..."
-vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
+vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:25:57 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
-# -- Compiling module pwm_generator
-# 
-# Top level modules:
-# 	pwm_generator
-# End time: 16:25:57 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:05 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
-# -- Compiling module pwm_generator
-# 
-# Top level modules:
-# 	pwm_generator
-# End time: 16:27:05 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim +altera -do ServoController_run_msim_rtl_verilog.do -l msim_transcript -gui work.pwm_generator
-# vsim -gui "+altera" -l msim_transcript -do "ServoController_run_msim_rtl_verilog.do" 
-# Start time: 16:27:15 on Oct 14,2016
-# Loading work.pwm_generator
-# do ServoController_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
-# vmap -modelsim_quiet work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v}
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:18 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
-# -- Compiling module pwm_generator
-# 
-# Top level modules:
-# 	pwm_generator
-# End time: 16:27:18 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt}
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:18 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt 
-# -- Compiling module ServoController_vlg_tst
-# ** Error: D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt(65): near "@": syntax error, unexpected '@'
-# End time: 16:27:18 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/AlteraWindoze/14.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./ServoController_run_msim_rtl_verilog.do line 10
-# invalid command name "vsim_increment_error_count"
-#     while executing
-# "::tcl_unknown vsim_increment_error_count"
-#     ("uplevel" body line 1)
-#     invoked from within
-# "uplevel 1 ::tcl_unknown $args"
-vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:44 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
-# -- Compiling module pwm_generator
-# 
-# Top level modules:
-# 	pwm_generator
-# End time: 16:27:44 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim +altera -do ServoController_run_msim_rtl_verilog.do -l msim_transcript -gui work.pwm_generator
-# vsim 
-# Start time: 16:27:57 on Oct 14,2016
-# Loading work.pwm_generator
-# do ServoController_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
-# vmap -modelsim_quiet work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v}
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:59 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
-# -- Compiling module pwm_generator
-# 
-# Top level modules:
-# 	pwm_generator
-# End time: 16:27:59 on Oct 14,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt}
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 16:27:59 on Oct 14,2016
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt 
+# Start time: 14:38:58 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
 # -- Compiling module ServoController_vlg_tst
 # 
 # Top level modules:
 # 	ServoController_vlg_tst
-# End time: 16:27:59 on Oct 14,2016, Elapsed time: 0:00:00
+# End time: 14:38:58 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vsim work.ServoController_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "ServoController_run_msim_rtl_verilog.do" 
+# Start time: 14:39:02 on Oct 15,2016
+# Loading work.ServoController_vlg_tst
+# Loading work.pwm_generator
+add wave -position end  sim:/ServoController_vlg_tst/clk
+add wave -position end  sim:/ServoController_vlg_tst/enable
+add wave -position end  sim:/ServoController_vlg_tst/pulse_in
+add wave -position end  sim:/ServoController_vlg_tst/PWM_out
+run -all
+# Running testbench
+vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:42:15 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
+# -- Compiling module ServoController_vlg_tst
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testBench
+# Top level modules:
+# 	ServoController_vlg_tst
+# End time: 14:42:15 on Oct 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ServoController_vlg_tst
 # vsim 
-# Start time: 16:28:01 on Oct 14,2016
-# ** Error: (vsim-3170) Could not find 'D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/rtl_work.testBench'.
+# Start time: 14:42:20 on Oct 15,2016
+# Loading work.ServoController_vlg_tst
+# Loading work.pwm_generator
+add wave -position end  sim:/ServoController_vlg_tst/clk
+add wave -position end  sim:/ServoController_vlg_tst/enable
+add wave -position end  sim:/ServoController_vlg_tst/pulse_in
+add wave -position end  sim:/ServoController_vlg_tst/PWM_out
+run -all
+# Running testbench
+# Break key hit
+# Simulation stop requested.
+vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:46:02 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
+# -- Compiling module ServoController_vlg_tst
 # 
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ServoController_run_msim_rtl_verilog.do PAUSED at line 12
-# End time: 16:28:35 on Oct 14,2016, Elapsed time: 0:00:34
-# Errors: 1, Warnings: 0
+# Top level modules:
+# 	ServoController_vlg_tst
+# End time: 14:46:03 on Oct 15,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.ServoController_vlg_tst
+# vsim 
+# Start time: 14:46:07 on Oct 15,2016
+# Loading work.ServoController_vlg_tst
+# Loading work.pwm_generator
+add wave -position end  sim:/ServoController_vlg_tst/clk
+add wave -position end  sim:/ServoController_vlg_tst/enable
+add wave -position end  sim:/ServoController_vlg_tst/pulse_in
+add wave -position end  sim:/ServoController_vlg_tst/PWM_out
+run -all
+# Running testbench
+# Break key hit
+# Simulation stop requested.
+vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:48:29 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
+# -- Compiling module ServoController_vlg_tst
+# 
+# Top level modules:
+# 	ServoController_vlg_tst
+# End time: 14:48:29 on Oct 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ServoController_vlg_tst
+# vsim 
+# Start time: 14:48:38 on Oct 15,2016
+# Loading work.ServoController_vlg_tst
+# Loading work.pwm_generator
+add wave -position end  sim:/ServoController_vlg_tst/clk
+add wave -position end  sim:/ServoController_vlg_tst/enable
+add wave -position end  sim:/ServoController_vlg_tst/pulse_in
+add wave -position end  sim:/ServoController_vlg_tst/PWM_out
+# Load canceled
+run
+# Running testbench
+vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:52 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
+# -- Compiling module ServoController_vlg_tst
+# 
+# Top level modules:
+# 	ServoController_vlg_tst
+# End time: 14:50:52 on Oct 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ServoController_vlg_tst
+# vsim 
+# Start time: 14:50:55 on Oct 15,2016
+# Loading work.ServoController_vlg_tst
+# Loading work.pwm_generator
+add wave  \
+sim:/ServoController_vlg_tst/clk \
+sim:/ServoController_vlg_tst/enable \
+sim:/ServoController_vlg_tst/pulse_in \
+sim:/ServoController_vlg_tst/PWM_out
+run -all
+# Running testbench
+# End time: 14:52:36 on Oct 15,2016, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 0

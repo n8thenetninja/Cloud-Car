@@ -9,45 +9,44 @@ z2
 cModel Technology
 Z0 dD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim
 vpwm_generator
-Z1 !s110 1476484079
+!s110 1476563928
 !i10b 1
 !s100 P^`@SSR2ceIa[I;QfaC>i2
 I^3TN2iG2_:AQ91WEC`Uj43
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
 R0
 w1476481218
 8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
 FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
 L0 30
-Z3 OV;L;10.3c;59
+Z2 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1476484079.778000
+!s108 1476563928.164000
 !s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v|
 !i113 1
-Z4 o-vlog01compat -work work
+o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController
 vServoController_vlg_tst
-R1
+!s110 1476564652
 !i10b 1
-!s100 [zI4e>fW[^G:?ajWJjeO`0
-I@f4H^4]kG`lSf[=nA@5_n0
-R2
+!s100 kIU_9<UHgbd]5g?bTQgAQ2
+Ihc72Bjk_PIMNKJ?jaN@lW0
+R1
 R0
-w1476484055
-8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt
-FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt
+w1476564620
+8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
 L0 29
-R3
+R2
 r1
 !s85 0
 31
-!s108 1476484079.851000
-!s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt|
+!s108 1476564652.318000
+!s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v|
+!s90 -reportprogress|300|-work|work|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v|
 !i113 1
-R4
-!s92 -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim
+o-work work
 n@servo@controller_vlg_tst

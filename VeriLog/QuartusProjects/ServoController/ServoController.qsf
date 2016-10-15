@@ -62,9 +62,9 @@ set_global_assignment -name EDA_TEST_BENCH_NAME testBench -section_id eda_simula
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testBench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testBench -section_id testBench
 set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/ServoController.vt -section_id testBench
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name SOURCE_FILE SPI_instance/SPI_instance.cmp
-set_global_assignment -name QIP_FILE SPI_instance/synthesis/SPI_instance.qip
-set_global_assignment -name VERILOG_TEST_BENCH_FILE simulation/modelsim/ServoController.vt
+set_global_assignment -name VERILOG_FILE ServoController_vlg_tst.v
 set_global_assignment -name VERILOG_FILE pwm_generator.v
 set_global_assignment -name BDF_FILE ServoController.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name VERILOG_FILE clockDivider.v
