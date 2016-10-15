@@ -1,23 +1,26 @@
-module clkDivide(
-input wire clk;
-input wire reset;
-output reg newClk; )
-reg q;
+/*
+Clock divider to convert 50MHz to ~200kHz
+*/
+
+module clockDivider(
+input wire clk,
+input wire reset,
+output reg newClk );
 reg [7:0] count;
 
-always@(posedge reset or negedge clk) begin
-    if (reset) begin
-      q <= 1'b0;
-    end else if (count = 8'b11111111) begin
-      q = ~q;
+always@(negedge reset, negedge clk) begin
+    if (!reset) begin
+      newClk <= 1'b0;
+    end else if (count == 8'b01111111) begin
+      newClk = ~newClk;
     end
   end
 
-  always@ (posedge clk)
+  always@ (posedge clk, negedge reset)
   begin
-  if (reset)
+  if (!reset)
   begin
-  count = 8'b00000000
+  count <= 1'b0;
   end
   else
   begin

@@ -8,45 +8,66 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim
+vclockDivider
+!s110 1476572096
+!i10b 1
+!s100 L2aQ2UR@lk0P8g@8V]SE_3
+II8GJY6hW3WImQT2D8P4;<1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1476572056
+8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v
+FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v
+L0 5
+Z2 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1476572096.222000
+!s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v|
+!s90 -reportprogress|300|-work|work|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v|
+!i113 1
+Z3 o-work work
+nclock@divider
+vclockDivider_testbench
+!s110 1476572094
+!i10b 1
+!s100 H>dfmDoaHCB73:JjP^mio2
+I?hZl;O^z;BLiGVFY]mc]N1
+R1
+R0
+w1476571952
+8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v
+FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1476572094.505000
+!s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v|
+!s90 -reportprogress|300|-work|work|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v|
+!i113 1
+R3
+nclock@divider_testbench
 vpwm_generator
-!s110 1476563928
+!s110 1476572081
 !i10b 1
 !s100 P^`@SSR2ceIa[I;QfaC>i2
 I^3TN2iG2_:AQ91WEC`Uj43
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R1
 R0
 w1476481218
 8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
 FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v
 L0 30
-Z2 OV;L;10.3c;59
+R2
 r1
 !s85 0
 31
-!s108 1476563928.164000
+!s108 1476572081.299000
 !s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v|
 !i113 1
 o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController
-vServoController_vlg_tst
-!s110 1476564652
-!i10b 1
-!s100 kIU_9<UHgbd]5g?bTQgAQ2
-Ihc72Bjk_PIMNKJ?jaN@lW0
-R1
-R0
-w1476564620
-8D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-FD:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-L0 29
-R2
-r1
-!s85 0
-31
-!s108 1476564652.318000
-!s107 D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v|
-!s90 -reportprogress|300|-work|work|D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v|
-!i113 1
-o-work work
-n@servo@controller_vlg_tst

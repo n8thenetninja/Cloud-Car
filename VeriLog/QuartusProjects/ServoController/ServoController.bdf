@@ -38,7 +38,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 264 232 280)
+	(rect 56 264 224 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -126,17 +126,34 @@ agreement for further details.
 	)
 	(annotation_block (parameter)(rect 672 104 864 136))
 )
-(connector
-	(pt 424 200)
-	(pt 400 200)
-)
-(connector
-	(pt 400 200)
-	(pt 400 272)
-)
-(connector
-	(pt 400 272)
-	(pt 232 272)
+(symbol
+	(rect 256 240 408 320)
+	(text "clockDivider" (rect 5 0 66 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "newClk" (rect 0 0 35 12)(font "Arial" ))
+		(text "newClk" (rect 102 27 137 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
 )
 (connector
 	(pt 424 184)
@@ -145,10 +162,6 @@ agreement for further details.
 (connector
 	(pt 360 184)
 	(pt 360 224)
-)
-(connector
-	(pt 360 224)
-	(pt 224 224)
 )
 (connector
 	(pt 424 168)
@@ -167,3 +180,36 @@ agreement for further details.
 	(pt 728 232)
 	(pt 768 232)
 )
+(connector
+	(pt 248 288)
+	(pt 256 288)
+)
+(connector
+	(pt 248 224)
+	(pt 248 288)
+)
+(connector
+	(pt 224 224)
+	(pt 248 224)
+)
+(connector
+	(pt 248 224)
+	(pt 360 224)
+)
+(connector
+	(pt 424 200)
+	(pt 416 200)
+)
+(connector
+	(pt 416 200)
+	(pt 416 272)
+)
+(connector
+	(pt 408 272)
+	(pt 416 272)
+)
+(connector
+	(pt 224 272)
+	(pt 256 272)
+)
+(junction (pt 248 224))

@@ -1,0 +1,33 @@
+`timescale 1 ns/ 1 ps
+module ServoController_vlg_tst();
+
+// test vector input registers
+reg clk;
+reg reset;
+// wires                                               
+wire newClk;
+
+clockDivider (
+	.clk(clk)
+	.reset(reset)
+	.newClk(newClk);
+
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin    
+$display("Running testbench");                      
+reset = 1;
+clk = 0;
+#10
+reset = 0;
+#20000;
+
+// --> end                                             
+                       
+end                                                    
+always #10 clk = ~clk;                                              
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                                                                    
+endmodule
+

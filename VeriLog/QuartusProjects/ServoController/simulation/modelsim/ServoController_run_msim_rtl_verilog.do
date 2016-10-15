@@ -6,6 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v}
+vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v}
 
 vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt}
 

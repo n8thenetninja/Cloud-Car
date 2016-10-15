@@ -14,139 +14,68 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:38:48 on Oct 15,2016
+# Start time: 16:54:41 on Oct 15,2016
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v 
 # -- Compiling module pwm_generator
 # 
 # Top level modules:
 # 	pwm_generator
-# End time: 14:38:48 on Oct 15,2016, Elapsed time: 0:00:00
+# End time: 16:54:41 on Oct 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:54:41 on Oct 15,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v 
+# -- Compiling module clockDivider
+# 
+# Top level modules:
+# 	clockDivider
+# End time: 16:54:41 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:38:48 on Oct 15,2016
+# Start time: 16:54:41 on Oct 15,2016
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim" D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt 
 # ** Error: (vlog-7) Failed to open design unit file "D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim/ServoController.vt" in read mode.
 # 
 # No such file or directory. (errno = ENOENT)
-# End time: 14:38:48 on Oct 15,2016, Elapsed time: 0:00:00
+# End time: 16:54:41 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: D:/AlteraWindoze/14.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./ServoController_run_msim_rtl_verilog.do line 10
+# Error in macro ./ServoController_run_msim_rtl_verilog.do line 11
 # D:/AlteraWindoze/14.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
 # "vlog -vlog01compat -work work +incdir+D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/simulation/modelsim {D:/SeniorProject/Cloud-C..."
-vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
+vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:38:58 on Oct 15,2016
-# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
-# -- Compiling module ServoController_vlg_tst
+# Start time: 16:54:54 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider_testbench.v 
+# -- Compiling module clockDivider_testbench
 # 
 # Top level modules:
-# 	ServoController_vlg_tst
-# End time: 14:38:58 on Oct 15,2016, Elapsed time: 0:00:00
+# 	clockDivider_testbench
+# End time: 16:54:54 on Oct 15,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.ServoController_vlg_tst
+vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:54:56 on Oct 15,2016
+# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v 
+# -- Compiling module clockDivider
+# 
+# Top level modules:
+# 	clockDivider
+# End time: 16:54:56 on Oct 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.clockDivider_testbench
 # vsim -gui "+altera" -l msim_transcript -do "ServoController_run_msim_rtl_verilog.do" 
-# Start time: 14:39:02 on Oct 15,2016
-# Loading work.ServoController_vlg_tst
-# Loading work.pwm_generator
-add wave -position end  sim:/ServoController_vlg_tst/clk
-add wave -position end  sim:/ServoController_vlg_tst/enable
-add wave -position end  sim:/ServoController_vlg_tst/pulse_in
-add wave -position end  sim:/ServoController_vlg_tst/PWM_out
+# Start time: 16:55:00 on Oct 15,2016
+# Loading work.clockDivider_testbench
+# Loading work.clockDivider
+add wave -position end  sim:/clockDivider_testbench/clk
+add wave -position end  sim:/clockDivider_testbench/reset
+add wave -position end  sim:/clockDivider_testbench/newClk
 run -all
 # Running testbench
-vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:42:15 on Oct 15,2016
-# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
-# -- Compiling module ServoController_vlg_tst
-# 
-# Top level modules:
-# 	ServoController_vlg_tst
-# End time: 14:42:15 on Oct 15,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.ServoController_vlg_tst
-# vsim 
-# Start time: 14:42:20 on Oct 15,2016
-# Loading work.ServoController_vlg_tst
-# Loading work.pwm_generator
-add wave -position end  sim:/ServoController_vlg_tst/clk
-add wave -position end  sim:/ServoController_vlg_tst/enable
-add wave -position end  sim:/ServoController_vlg_tst/pulse_in
-add wave -position end  sim:/ServoController_vlg_tst/PWM_out
-run -all
-# Running testbench
-# Break key hit
-# Simulation stop requested.
-vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:46:02 on Oct 15,2016
-# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
-# -- Compiling module ServoController_vlg_tst
-# 
-# Top level modules:
-# 	ServoController_vlg_tst
-# End time: 14:46:03 on Oct 15,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.ServoController_vlg_tst
-# vsim 
-# Start time: 14:46:07 on Oct 15,2016
-# Loading work.ServoController_vlg_tst
-# Loading work.pwm_generator
-add wave -position end  sim:/ServoController_vlg_tst/clk
-add wave -position end  sim:/ServoController_vlg_tst/enable
-add wave -position end  sim:/ServoController_vlg_tst/pulse_in
-add wave -position end  sim:/ServoController_vlg_tst/PWM_out
-run -all
-# Running testbench
-# Break key hit
-# Simulation stop requested.
-vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:48:29 on Oct 15,2016
-# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
-# -- Compiling module ServoController_vlg_tst
-# 
-# Top level modules:
-# 	ServoController_vlg_tst
-# End time: 14:48:29 on Oct 15,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.ServoController_vlg_tst
-# vsim 
-# Start time: 14:48:38 on Oct 15,2016
-# Loading work.ServoController_vlg_tst
-# Loading work.pwm_generator
-add wave -position end  sim:/ServoController_vlg_tst/clk
-add wave -position end  sim:/ServoController_vlg_tst/enable
-add wave -position end  sim:/ServoController_vlg_tst/pulse_in
-add wave -position end  sim:/ServoController_vlg_tst/PWM_out
-# Load canceled
-run
-# Running testbench
-vlog -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v
-# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:50:52 on Oct 15,2016
-# vlog -reportprogress 300 -work work D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController_vlg_tst.v 
-# -- Compiling module ServoController_vlg_tst
-# 
-# Top level modules:
-# 	ServoController_vlg_tst
-# End time: 14:50:52 on Oct 15,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.ServoController_vlg_tst
-# vsim 
-# Start time: 14:50:55 on Oct 15,2016
-# Loading work.ServoController_vlg_tst
-# Loading work.pwm_generator
-add wave  \
-sim:/ServoController_vlg_tst/clk \
-sim:/ServoController_vlg_tst/enable \
-sim:/ServoController_vlg_tst/pulse_in \
-sim:/ServoController_vlg_tst/PWM_out
-run -all
-# Running testbench
-# End time: 14:52:36 on Oct 15,2016, Elapsed time: 0:01:41
+# End time: 17:11:17 on Oct 15,2016, Elapsed time: 0:16:17
 # Errors: 0, Warnings: 0
