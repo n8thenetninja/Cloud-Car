@@ -1,0 +1,26 @@
+
+State Machine - |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|streamSt
+Name streamSt.11 streamSt.10 streamSt.01 streamSt.00 
+streamSt.00 0 0 0 0 
+streamSt.01 0 0 1 1 
+streamSt.10 0 1 0 1 
+streamSt.11 1 0 0 1 
+
+State Machine - |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt
+Name CurrState_SISt.1111 CurrState_SISt.1110 CurrState_SISt.1101 CurrState_SISt.1100 CurrState_SISt.1011 CurrState_SISt.1010 CurrState_SISt.1001 CurrState_SISt.1000 CurrState_SISt.0111 CurrState_SISt.0110 CurrState_SISt.0101 CurrState_SISt.0100 CurrState_SISt.0011 CurrState_SISt.0010 CurrState_SISt.0001 CurrState_SISt.0000 
+CurrState_SISt.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+CurrState_SISt.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+CurrState_SISt.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+CurrState_SISt.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+CurrState_SISt.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+CurrState_SISt.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+CurrState_SISt.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+CurrState_SISt.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+CurrState_SISt.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+CurrState_SISt.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
