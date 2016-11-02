@@ -1,19 +1,20 @@
-...
+"""
     UDP server sender
-...
+"""
 
 
 import socket
 import sys
 
 
-HOST =      #host
-PORT =      #port number
+HOST =      "192.168.1.1"#host
+PORT =      10#port number
 
 try: 
     s = socket.socket(socket.AF.INET, socket.SOCK_DRAM)
-except  socket.error, msg
-    sys.exit()
+except:  #socket.error, msg
+	print "something broke"
+	sys.exit()
     
 while 1:
     d = s.recvfrom(1024)
