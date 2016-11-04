@@ -2,12 +2,11 @@
 PQM_out <= pwm_generator:inst.pwm
 enable => pwm_generator:inst.rst_n
 enable => clockDivider:inst1.reset
-enable => inst3.OE
 clk => clockDivider:inst1.clk
 clk => i2cSlave:inst2.clk
 Reset => i2cSlave:inst2.rst
 SCL => i2cSlave:inst2.scl
-SDA => inst3.DATAIN
+SDA <> i2cSlave:inst2.sda
 
 
 |ServoController|pwm_generator:inst
