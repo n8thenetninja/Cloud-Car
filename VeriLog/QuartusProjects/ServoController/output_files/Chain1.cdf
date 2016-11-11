@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/") File("ServoController.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/") File("ServoController.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

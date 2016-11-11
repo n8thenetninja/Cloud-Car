@@ -3,15 +3,15 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.080
-TNS   : -190.283
+Slack : -2.204
+TNS   : -178.400
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.264
-TNS   : -6.349
+Slack : -1.371
+TNS   : -6.682
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.344
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:inst1|newClk'
@@ -20,46 +20,46 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -151.000
+TNS   : -152.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
 TNS   : -9.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.800
-TNS   : -157.735
+Slack : -1.859
+TNS   : -146.127
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.015
-TNS   : -4.678
+Slack : -1.126
+TNS   : -5.027
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.298
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.503
+Slack : 0.501
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -151.000
+TNS   : -152.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
 TNS   : -9.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.722
-TNS   : -51.093
+Slack : -0.818
+TNS   : -43.107
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -0.245
-TNS   : -0.305
+Slack : -0.289
+TNS   : -0.361
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.163
+Slack : 0.139
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
@@ -68,7 +68,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -159.901
+TNS   : -160.829
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000

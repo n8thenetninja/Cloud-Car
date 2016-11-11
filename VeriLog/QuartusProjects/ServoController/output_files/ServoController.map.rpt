@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ServoController
-Fri Nov 04 00:37:16 2016
+Thu Nov 10 21:06:39 2016
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -49,15 +49,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 04 00:37:16 2016      ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 10 21:06:39 2016      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ServoController                            ;
 ; Top-level Entity Name              ; ServoController                            ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 257                                        ;
-;     Total combinational functions  ; 224                                        ;
-;     Dedicated logic registers      ; 157                                        ;
-; Total registers                    ; 157                                        ;
+; Total logic elements               ; 259                                        ;
+;     Total combinational functions  ; 226                                        ;
+;     Dedicated logic registers      ; 158                                        ;
+; Total registers                    ; 158                                        ;
 ; Total pins                         ; 6                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -153,38 +153,31 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
-+----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                          ; Library ;
-+----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
-; i2cslave/trunk/rtl/timescale.v         ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/timescale.v         ;         ;
-; i2cslave/trunk/rtl/serialInterface.v   ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/serialInterface.v   ;         ;
-; i2cslave/trunk/rtl/registerInterface.v ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/registerInterface.v ;         ;
-; i2cslave/trunk/rtl/i2cSlave_define.v   ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/i2cSlave_define.v   ;         ;
-; i2cslave/trunk/rtl/i2cSlave.v          ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/i2cSlave.v          ;         ;
-; pwm_generator.v                        ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v                        ;         ;
-; ServoController.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController.bdf                    ;         ;
-; clockDivider.v                         ; yes             ; User Verilog HDL File              ; C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v                         ;         ;
-+----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                              ;
++----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; i2cslave/trunk/rtl/timescale.v         ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/timescale.v         ;         ;
+; i2cslave/trunk/rtl/serialInterface.v   ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/serialInterface.v   ;         ;
+; i2cslave/trunk/rtl/registerInterface.v ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/registerInterface.v ;         ;
+; i2cslave/trunk/rtl/i2cSlave_define.v   ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/i2cSlave_define.v   ;         ;
+; i2cslave/trunk/rtl/i2cSlave.v          ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/i2cslave/trunk/rtl/i2cSlave.v          ;         ;
+; pwm_generator.v                        ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/pwm_generator.v                        ;         ;
+; ServoController.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/ServoController.bdf                    ;         ;
+; clockDivider.v                         ; yes             ; User Verilog HDL File              ; D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/clockDivider.v                         ;         ;
++----------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -192,20 +185,20 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 257       ;
+; Estimated Total logic elements              ; 259       ;
 ;                                             ;           ;
-; Total combinational functions               ; 224       ;
+; Total combinational functions               ; 226       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 132       ;
-;     -- 3 input functions                    ; 30        ;
-;     -- <=2 input functions                  ; 62        ;
+;     -- 4 input functions                    ; 134       ;
+;     -- 3 input functions                    ; 29        ;
+;     -- <=2 input functions                  ; 63        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 198       ;
-;     -- arithmetic mode                      ; 26        ;
+;     -- normal mode                          ; 199       ;
+;     -- arithmetic mode                      ; 27        ;
 ;                                             ;           ;
-; Total registers                             ; 157       ;
-;     -- Dedicated logic registers            ; 157       ;
+; Total registers                             ; 158       ;
+;     -- Dedicated logic registers            ; 158       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 6         ;
@@ -213,8 +206,8 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 148       ;
-; Total fan-out                               ; 1166      ;
+; Maximum fan-out                             ; 149       ;
+; Total fan-out                               ; 1176      ;
 ; Average fan-out                             ; 2.96      ;
 +---------------------------------------------+-----------+
 
@@ -224,10 +217,10 @@ agreement for further details.
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Library Name ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; |ServoController                              ; 224 (0)           ; 157 (0)      ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |ServoController                                                      ; work         ;
-;    |clockDivider:inst1|                       ; 11 (11)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|clockDivider:inst1                                   ; work         ;
-;    |i2cSlave:inst2|                           ; 194 (49)          ; 139 (41)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2                                       ; work         ;
-;       |registerInterface:u_registerInterface| ; 32 (32)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
+; |ServoController                              ; 226 (0)           ; 158 (0)      ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |ServoController                                                      ; work         ;
+;    |clockDivider:inst1|                       ; 12 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|clockDivider:inst1                                   ; work         ;
+;    |i2cSlave:inst2|                           ; 195 (49)          ; 139 (41)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2                                       ; work         ;
+;       |registerInterface:u_registerInterface| ; 33 (33)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
 ;       |serialInterface:u_serialInterface|     ; 113 (113)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface     ; work         ;
 ;    |pwm_generator:inst|                       ; 19 (19)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst                                   ; work         ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
@@ -292,10 +285,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 157   ;
+; Total registers                              ; 158   ;
 ; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Clear ; 19    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 67    ;
 ; Number of registers using Preset             ; 0     ;
@@ -335,8 +328,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 6                           ;
-; cycloneiii_ff         ; 157                         ;
-;     CLR               ; 18                          ;
+; cycloneiii_ff         ; 158                         ;
+;     CLR               ; 19                          ;
 ;     ENA               ; 57                          ;
 ;     ENA SCLR          ; 2                           ;
 ;     ENA SLD           ; 8                           ;
@@ -344,18 +337,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 2                           ;
 ;     plain             ; 69                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 224                         ;
-;     arith             ; 26                          ;
-;         2 data inputs ; 17                          ;
+; cycloneiii_lcell_comb ; 226                         ;
+;     arith             ; 27                          ;
+;         2 data inputs ; 18                          ;
 ;         3 data inputs ; 9                           ;
-;     normal            ; 198                         ;
+;     normal            ; 199                         ;
 ;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 40                          ;
-;         3 data inputs ; 21                          ;
-;         4 data inputs ; 132                         ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 134                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.15                        ;
+; Average LUT depth     ; 2.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -374,9 +367,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Nov 04 00:37:05 2016
+    Info: Processing started: Thu Nov 10 21:06:27 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ServoController -c ServoController
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 0 design units, including 0 entities, in source file i2cslave/trunk/rtl/timescale.v
 Info (12021): Found 1 design units, including 1 entities, in source file i2cslave/trunk/rtl/serialinterface.v
     Info (12023): Found entity 1: serialInterface
@@ -408,24 +401,24 @@ Info (12128): Elaborating entity "serialInterface" for hierarchy "i2cSlave:inst2
 Info (10264): Verilog HDL Case Statement information at serialInterface.v(250): all case item expressions in this case statement are onehot
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.map.smsg
+Info (144001): Generated suppressed messages file D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 265 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 267 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 259 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 695 megabytes
-    Info: Processing ended: Fri Nov 04 00:37:16 2016
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21061): Implemented 261 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 641 megabytes
+    Info: Processing ended: Thu Nov 10 21:06:39 2016
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.map.smsg.
+The suppressed messages can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.map.smsg.
 
 

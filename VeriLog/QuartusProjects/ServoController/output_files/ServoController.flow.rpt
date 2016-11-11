@@ -1,5 +1,5 @@
 Flow report for ServoController
-Fri Nov 04 00:37:35 2016
+Thu Nov 10 21:07:00 2016
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,17 +41,17 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 04 00:37:35 2016      ;
+; Flow Status                        ; Successful - Thu Nov 10 21:07:00 2016      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ServoController                            ;
 ; Top-level Entity Name              ; ServoController                            ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE22F17C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 236 / 22,320 ( 1 % )                       ;
-;     Total combinational functions  ; 224 / 22,320 ( 1 % )                       ;
-;     Dedicated logic registers      ; 157 / 22,320 ( < 1 % )                     ;
-; Total registers                    ; 157                                        ;
+; Total logic elements               ; 240 / 22,320 ( 1 % )                       ;
+;     Total combinational functions  ; 226 / 22,320 ( 1 % )                       ;
+;     Dedicated logic registers      ; 158 / 22,320 ( < 1 % )                     ;
+; Total registers                    ; 158                                        ;
 ; Total pins                         ; 6 / 154 ( 4 % )                            ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                        ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2016 00:37:05 ;
+; Start date & time ; 11/10/2016 21:06:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ServoController     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 260097671805612.147824142501968        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 106258772514641.147883718703680        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testBench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testBench                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -106,12 +106,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 695 MB              ; 00:00:25                           ;
-; Fitter                    ; 00:00:06     ; 2.0                     ; 1462 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 585 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 713 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 556 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 627 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 976 MB              ; 00:00:09                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 575 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 655 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 546 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:42                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,11 +120,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-MNOVG7O  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-MNOVG7O  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-MNOVG7O  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-MNOVG7O  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-MNOVG7O  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-GTBIKOQ  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-GTBIKOQ  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-GTBIKOQ  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-GTBIKOQ  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-GTBIKOQ  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
