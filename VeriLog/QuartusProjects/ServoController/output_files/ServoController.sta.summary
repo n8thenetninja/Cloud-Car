@@ -3,19 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.204
-TNS   : -178.400
+Slack : -2.150
+TNS   : -190.000
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.371
-TNS   : -6.682
+Slack : -1.691
+TNS   : -11.147
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.343
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.558
+Slack : 0.360
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -24,22 +24,22 @@ TNS   : -152.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.859
-TNS   : -146.127
+Slack : -1.855
+TNS   : -156.281
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.126
-TNS   : -5.027
+Slack : -1.414
+TNS   : -8.751
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.298
+Slack : 0.311
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.501
+Slack : 0.320
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -48,30 +48,30 @@ TNS   : -152.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.818
-TNS   : -43.107
+Slack : -0.739
+TNS   : -48.345
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -0.289
-TNS   : -0.361
+Slack : -0.515
+TNS   : -1.845
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.139
+Slack : 0.119
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.299
+Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -160.829
+TNS   : -160.574
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 ------------------------------------------------------------

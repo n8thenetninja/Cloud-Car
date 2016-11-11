@@ -1,5 +1,5 @@
 Fitter report for ServoController
-Thu Nov 10 21:06:50 2016
+Fri Nov 11 11:56:27 2016
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -70,18 +70,18 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 10 21:06:50 2016      ;
+; Fitter Status                      ; Successful - Fri Nov 11 11:56:27 2016      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ServoController                            ;
 ; Top-level Entity Name              ; ServoController                            ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE22F17C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 240 / 22,320 ( 1 % )                       ;
-;     Total combinational functions  ; 226 / 22,320 ( 1 % )                       ;
-;     Dedicated logic registers      ; 158 / 22,320 ( < 1 % )                     ;
-; Total registers                    ; 158                                        ;
-; Total pins                         ; 6 / 154 ( 4 % )                            ;
+; Total logic elements               ; 258 / 22,320 ( 1 % )                       ;
+;     Total combinational functions  ; 257 / 22,320 ( 1 % )                       ;
+;     Dedicated logic registers      ; 161 / 22,320 ( < 1 % )                     ;
+; Total registers                    ; 161                                        ;
+; Total pins                         ; 9 / 154 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
@@ -165,7 +165,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+--------------------------------------+
 ; Pin Name ; Reason                               ;
 +----------+--------------------------------------+
-; PQM_out  ; Missing drive strength and slew rate ;
+; chan1    ; Missing drive strength and slew rate ;
+; chan2    ; Missing drive strength and slew rate ;
+; chan3    ; Missing drive strength and slew rate ;
+; chan4    ; Missing drive strength and slew rate ;
 ; SDA      ; Missing drive strength and slew rate ;
 +----------+--------------------------------------+
 
@@ -176,8 +179,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 411 ) ; 0.00 % ( 0 / 411 )         ; 0.00 % ( 0 / 411 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 411 ) ; 0.00 % ( 0 / 411 )         ; 0.00 % ( 0 / 411 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 451 ) ; 0.00 % ( 0 / 451 )         ; 0.00 % ( 0 / 451 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 451 ) ; 0.00 % ( 0 / 451 )         ; 0.00 % ( 0 / 451 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -200,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 401 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 441 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -216,28 +219,28 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 240 / 22,320 ( 1 % )   ;
-;     -- Combinational with no register       ; 82                     ;
-;     -- Register only                        ; 14                     ;
-;     -- Combinational with a register        ; 144                    ;
+; Total logic elements                        ; 258 / 22,320 ( 1 % )   ;
+;     -- Combinational with no register       ; 97                     ;
+;     -- Register only                        ; 1                      ;
+;     -- Combinational with a register        ; 160                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 134                    ;
-;     -- 3 input functions                    ; 29                     ;
-;     -- <=2 input functions                  ; 63                     ;
-;     -- Register only                        ; 14                     ;
+;     -- 4 input functions                    ; 141                    ;
+;     -- 3 input functions                    ; 50                     ;
+;     -- <=2 input functions                  ; 66                     ;
+;     -- Register only                        ; 1                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 199                    ;
-;     -- arithmetic mode                      ; 27                     ;
+;     -- normal mode                          ; 209                    ;
+;     -- arithmetic mode                      ; 48                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 158 / 23,018 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 158 / 22,320 ( < 1 % ) ;
+; Total registers*                            ; 161 / 23,018 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 161 / 22,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )        ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 18 / 1,395 ( 1 % )     ;
+; Total LABs:  partially or completely used   ; 17 / 1,395 ( 1 % )     ;
 ; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 6 / 154 ( 4 % )        ;
+; I/O pins                                    ; 9 / 154 ( 6 % )        ;
 ;     -- Clock pins                           ; 2 / 7 ( 29 % )         ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
 ;                                             ;                        ;
@@ -253,12 +256,12 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 0.2% / 0.3% / 0.2%     ;
-; Peak interconnect usage (total/H/V)         ; 2.4% / 2.7% / 2.0%     ;
+; Average interconnect usage (total/H/V)      ; 0.3% / 0.4% / 0.3%     ;
+; Peak interconnect usage (total/H/V)         ; 2.1% / 2.1% / 2.0%     ;
 ; Maximum fan-out                             ; 149                    ;
-; Highest non-global fan-out                  ; 50                     ;
-; Total fan-out                               ; 1198                   ;
-; Average fan-out                             ; 2.83                   ;
+; Highest non-global fan-out                  ; 51                     ;
+; Total fan-out                               ; 1297                   ;
+; Average fan-out                             ; 2.88                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -271,29 +274,29 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 240 / 22320 ( 1 % )   ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 82                    ; 0                              ;
-;     -- Register only                        ; 14                    ; 0                              ;
-;     -- Combinational with a register        ; 144                   ; 0                              ;
+; Total logic elements                        ; 258 / 22320 ( 1 % )   ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 97                    ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
+;     -- Combinational with a register        ; 160                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 134                   ; 0                              ;
-;     -- 3 input functions                    ; 29                    ; 0                              ;
-;     -- <=2 input functions                  ; 63                    ; 0                              ;
-;     -- Register only                        ; 14                    ; 0                              ;
+;     -- 4 input functions                    ; 141                   ; 0                              ;
+;     -- 3 input functions                    ; 50                    ; 0                              ;
+;     -- <=2 input functions                  ; 66                    ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 199                   ; 0                              ;
-;     -- arithmetic mode                      ; 27                    ; 0                              ;
+;     -- normal mode                          ; 209                   ; 0                              ;
+;     -- arithmetic mode                      ; 48                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 158                   ; 0                              ;
-;     -- Dedicated logic registers            ; 158 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+; Total registers                             ; 161                   ; 0                              ;
+;     -- Dedicated logic registers            ; 161 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 18 / 1395 ( 1 % )     ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 17 / 1395 ( 1 % )     ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 6                     ; 0                              ;
+; I/O pins                                    ; 9                     ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ; 0 / 132 ( 0 % )                ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
@@ -306,8 +309,8 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 1193                  ; 5                              ;
-;     -- Registered Connections               ; 587                   ; 0                              ;
+;     -- Total Connections                    ; 1292                  ; 5                              ;
+;     -- Registered Connections               ; 660                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 2                     ; 0                              ;
@@ -315,7 +318,7 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
 ;     -- Input Ports                          ; 4                     ; 0                              ;
-;     -- Output Ports                         ; 1                     ; 0                              ;
+;     -- Output Ports                         ; 4                     ; 0                              ;
 ;     -- Bidir Ports                          ; 1                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Registered Ports                            ;                       ;                                ;
@@ -342,17 +345,20 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; Reset  ; T8    ; 3        ; 27           ; 0            ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SCL    ; C3    ; 8        ; 1            ; 34           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; clk    ; R8    ; 3        ; 27           ; 0            ; 21           ; 149                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; enable ; M1    ; 2        ; 0            ; 16           ; 21           ; 19                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; enable ; M1    ; 2        ; 0            ; 16           ; 21           ; 22                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-+---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
-+---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; PQM_out ; B12   ; 7        ; 43           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-+---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; chan1 ; A12   ; 7        ; 43           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; chan2 ; D11   ; 7        ; 51           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; chan3 ; D12   ; 7        ; 51           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; chan4 ; B12   ; 7        ; 43           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -396,7 +402,7 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; 4        ; 0 / 20 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 18 ( 0 % )  ; 2.5V          ; --           ;
 ; 6        ; 1 / 13 ( 8 % )  ; 2.5V          ; --           ;
-; 7        ; 1 / 24 ( 4 % )  ; 2.5V          ; --           ;
+; 7        ; 4 / 24 ( 17 % ) ; 2.5V          ; --           ;
 ; 8        ; 2 / 24 ( 8 % )  ; 2.5V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
@@ -417,7 +423,7 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; A9       ; 209        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A10      ; 198        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A11      ; 188        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A12      ; 186        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A12      ; 186        ; 7        ; chan1                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A13      ; 179        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A14      ; 181        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A15      ; 191        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -433,7 +439,7 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; B9       ; 210        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B10      ; 199        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B11      ; 189        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B12      ; 187        ; 7        ; PQM_out                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B12      ; 187        ; 7        ; chan4                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B13      ; 180        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B14      ; 182        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -464,8 +470,8 @@ The pin-out file can be found in D:/SeniorProject/Cloud-Car/VeriLog/QuartusProje
 ; D8       ; 216        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D9       ; 201        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D11      ; 177        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D12      ; 178        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D11      ; 177        ; 7        ; chan2                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D12      ; 178        ; 7        ; chan3                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D13      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; D14      ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 170        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -672,28 +678,34 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Library Name ;
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
-; |ServoController                              ; 240 (0)     ; 158 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 82 (0)       ; 14 (0)            ; 144 (0)          ; |ServoController                                                      ; work         ;
+; |ServoController                              ; 258 (0)     ; 161 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 9    ; 0            ; 97 (0)       ; 1 (0)             ; 160 (0)          ; |ServoController                                                      ; work         ;
 ;    |clockDivider:inst1|                       ; 13 (13)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 1 (1)             ; 9 (9)            ; |ServoController|clockDivider:inst1                                   ; work         ;
-;    |i2cSlave:inst2|                           ; 215 (51)    ; 139 (41)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 76 (10)      ; 13 (1)            ; 126 (39)         ; |ServoController|i2cSlave:inst2                                       ; work         ;
-;       |registerInterface:u_registerInterface| ; 52 (52)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 12 (12)           ; 28 (28)          ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
-;       |serialInterface:u_serialInterface|     ; 113 (113)   ; 58 (58)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 54 (54)      ; 0 (0)             ; 59 (59)          ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface     ; work         ;
-;    |pwm_generator:inst|                       ; 19 (19)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 16 (16)          ; |ServoController|pwm_generator:inst                                   ; work         ;
+;    |i2cSlave:inst2|                           ; 220 (50)    ; 139 (41)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 81 (8)       ; 0 (0)             ; 139 (41)         ; |ServoController|i2cSlave:inst2                                       ; work         ;
+;       |registerInterface:u_registerInterface| ; 58 (58)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 40 (40)          ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
+;       |serialInterface:u_serialInterface|     ; 114 (114)   ; 58 (58)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 55 (55)      ; 0 (0)             ; 59 (59)          ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface     ; work         ;
+;    |pwm_generator:inst3|                      ; 19 (19)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 17 (17)          ; |ServoController|pwm_generator:inst3                                  ; work         ;
+;    |pwm_generator:inst5|                      ; 11 (11)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 8 (8)            ; |ServoController|pwm_generator:inst5                                  ; work         ;
+;    |pwm_generator:inst6|                      ; 11 (11)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 8 (8)            ; |ServoController|pwm_generator:inst6                                  ; work         ;
+;    |pwm_generator:inst|                       ; 11 (11)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 6 (6)            ; |ServoController|pwm_generator:inst                                   ; work         ;
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                     ;
-+---------+----------+---------------+---------------+-----------------------+-----+------+
-; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+---------+----------+---------------+---------------+-----------------------+-----+------+
-; PQM_out ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SDA     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; enable  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; clk     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Reset   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; SCL     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-+---------+----------+---------------+---------------+-----------------------+-----+------+
++----------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                    ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
+; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
+; chan1  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; chan2  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; chan3  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; chan4  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SDA    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; enable ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; clk    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; Reset  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; SCL    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +---------------------------------------------------------------+
@@ -717,20 +729,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                 ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 ; clk                                                                  ; PIN_R8             ; 149     ; Clock                   ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; clockDivider:inst1|newClk                                            ; FF_X52_Y17_N5      ; 9       ; Clock                   ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; enable                                                               ; PIN_M1             ; 19      ; Async. clear            ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~2      ; LCCOMB_X30_Y15_N8  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~4      ; LCCOMB_X29_Y15_N6  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~6      ; LCCOMB_X29_Y15_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~8      ; LCCOMB_X27_Y15_N4  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|rstPipe[1]                                            ; FF_X24_Y14_N7      ; 50      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1001 ; FF_X26_Y15_N9      ; 26      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~1           ; LCCOMB_X28_Y15_N28 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~11       ; LCCOMB_X25_Y15_N0  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~6         ; LCCOMB_X24_Y14_N8  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~25         ; LCCOMB_X24_Y15_N24 ; 2       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]~3         ; LCCOMB_X26_Y14_N8  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; i2cSlave:inst2|startStopDetState[0]~2                                ; LCCOMB_X25_Y14_N18 ; 2       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; clockDivider:inst1|newClk                                            ; FF_X25_Y33_N3      ; 12      ; Clock                   ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; enable                                                               ; PIN_M1             ; 22      ; Async. clear            ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~2      ; LCCOMB_X34_Y18_N8  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~3      ; LCCOMB_X31_Y18_N4  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~4      ; LCCOMB_X31_Y18_N30 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~6      ; LCCOMB_X35_Y18_N2  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|rstPipe[1]                                            ; FF_X29_Y17_N9      ; 51      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1001 ; FF_X30_Y17_N27     ; 26      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~1           ; LCCOMB_X32_Y17_N20 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~13       ; LCCOMB_X30_Y18_N8  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~5         ; LCCOMB_X30_Y17_N6  ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~25         ; LCCOMB_X28_Y17_N6  ; 2       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]~3         ; LCCOMB_X29_Y18_N26 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; i2cSlave:inst2|startStopDetState[0]~2                                ; LCCOMB_X27_Y17_N4  ; 2       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
 +----------------------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -739,9 +751,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                      ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk                       ; PIN_R8        ; 149     ; 31                                   ; Global Clock         ; GCLK18           ; --                        ;
-; clockDivider:inst1|newClk ; FF_X52_Y17_N5 ; 9       ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
-; enable                    ; PIN_M1        ; 19      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; clk                       ; PIN_R8        ; 149     ; 9                                    ; Global Clock         ; GCLK18           ; --                        ;
+; clockDivider:inst1|newClk ; FF_X25_Y33_N3 ; 12      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
+; enable                    ; PIN_M1        ; 22      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
 +---------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -750,50 +762,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------+---------+
 ; Name                                                                 ; Fan-Out ;
 +----------------------------------------------------------------------+---------+
-; i2cSlave:inst2|rstPipe[1]                                            ; 50      ;
-; i2cSlave:inst2|comb~0                                                ; 42      ;
+; i2cSlave:inst2|rstPipe[1]                                            ; 51      ;
+; i2cSlave:inst2|comb~0                                                ; 40      ;
 ; i2cSlave:inst2|sclDelayed[9]                                         ; 26      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1001 ; 26      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0111 ; 23      ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]          ; 17      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[0]          ; 17      ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]          ; 17      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0010 ; 14      ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[6]          ; 13      ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]          ; 13      ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0000 ; 12      ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0000 ; 13      ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~0      ; 12      ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0001 ; 10      ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0001 ; 11      ;
+; i2cSlave:inst2|startEdgeDet                                          ; 11      ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]          ; 11      ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[6]          ; 11      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|next_dataOut~0      ; 10      ;
-; i2cSlave:inst2|startEdgeDet                                          ; 10      ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[0]           ; 9       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~8      ; 8       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]~3         ; 8       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~5         ; 8       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|WideOr6~0           ; 8       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~13       ; 8       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~1           ; 8       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~6      ; 8       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~4      ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]~3         ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~6         ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|WideOr6~0           ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~11       ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~1           ; 8       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~3      ; 8       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~2      ; 8       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]~0         ; 7       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]~0         ; 7       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0110 ; 7       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1000 ; 7       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]           ; 7       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]           ; 7       ;
 ; i2cSlave:inst2|sdaDeb                                                ; 7       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1000 ; 6       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~0         ; 6       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~0         ; 6       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt.01         ; 6       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|writeEn             ; 6       ;
+; pwm_generator:inst3|count[0]                                         ; 6       ;
 ; i2cSlave:inst2|startStopDetState[0]                                  ; 6       ;
 ; i2cSlave:inst2|startStopDetState[1]                                  ; 6       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|clearStartStopDet   ; 5       ;
 ; i2cSlave:inst2|sdaDelayed[2]                                         ; 5       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt.00         ; 5       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[1]           ; 5       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[0]           ; 5       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[1]           ; 5       ;
 ; i2cSlave:inst2|sclDeb                                                ; 5       ;
+; pwm_generator:inst3|count[1]                                         ; 5       ;
+; pwm_generator:inst3|count[2]                                         ; 5       ;
+; pwm_generator:inst3|count[3]                                         ; 5       ;
+; pwm_generator:inst3|count[4]                                         ; 5       ;
+; pwm_generator:inst3|count[5]                                         ; 5       ;
+; pwm_generator:inst3|count[6]                                         ; 5       ;
+; pwm_generator:inst3|count[7]                                         ; 5       ;
 ; i2cSlave:inst2|sdaDelayed[3]                                         ; 4       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1011 ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1100 ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[6]           ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[5]           ; 4       ;
@@ -809,6 +827,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut[4]          ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut[5]          ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut[6]          ; 4       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|writeEn             ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut[7]          ; 4       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~44   ; 3       ;
 ; i2cSlave:inst2|sclPipe[7]                                            ; 3       ;
@@ -817,14 +836,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|sdaPipe[3]                                            ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1101 ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|always0~3           ; 3       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~5         ; 3       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~5         ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0100 ; 3       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~2         ; 3       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1011 ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0101 ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt.11         ; 3       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[7]           ; 3       ;
 ; clockDivider:inst1|count[0]                                          ; 3       ;
-; pwm_generator:inst|count[0]                                          ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~1      ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[0]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[1]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[2]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[3]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[4]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[5]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[6]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[7]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[0]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[1]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[2]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[3]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[4]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[5]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[6]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[7]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[0]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[1]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[2]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[3]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[4]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[5]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[6]       ; 3       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[7]       ; 3       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|myReg0[0]       ; 3       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|myReg0[1]       ; 3       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|myReg0[2]       ; 3       ;
@@ -850,13 +893,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.0011 ; 2       ;
 ; i2cSlave:inst2|startStopDetState[0]~2                                ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~25         ; 2       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~10        ; 2       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~10        ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1111 ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|always0~2           ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~14         ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~12         ; 2       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~4         ; 2       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~1         ; 2       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~4         ; 2       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~1         ; 2       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~6         ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt.1010 ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~1         ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|Equal5~0            ; 2       ;
@@ -876,17 +920,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[4]          ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[3]          ; 2       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[2]          ; 2       ;
-; pwm_generator:inst|count[1]                                          ; 2       ;
-; pwm_generator:inst|count[2]                                          ; 2       ;
-; pwm_generator:inst|count[3]                                          ; 2       ;
-; pwm_generator:inst|count[4]                                          ; 2       ;
-; pwm_generator:inst|count[5]                                          ; 2       ;
-; pwm_generator:inst|count[6]                                          ; 2       ;
-; pwm_generator:inst|count[7]                                          ; 2       ;
 ; SCL~input                                                            ; 1       ;
 ; SDA~input                                                            ; 1       ;
 ; clockDivider:inst1|count[0]~24                                       ; 1       ;
-; pwm_generator:inst|count[0]~21                                       ; 1       ;
+; pwm_generator:inst3|count[0]~21                                      ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector7~4     ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector6~4     ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector5~4     ; 1       ;
@@ -901,56 +938,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~26         ; 1       ;
 ; i2cSlave:inst2|sclDelayed~9                                          ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector7~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[0]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector7~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[0]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[0]       ; 1       ;
 ; i2cSlave:inst2|sclDelayed~8                                          ; 1       ;
 ; i2cSlave:inst2|sclDelayed[0]                                         ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector6~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[1]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector6~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[1]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[1]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~11           ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~10           ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[0]      ; 1       ;
 ; i2cSlave:inst2|sclDelayed~7                                          ; 1       ;
 ; i2cSlave:inst2|sclDelayed[1]                                         ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector5~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[2]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector5~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[2]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[2]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~9            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[1]      ; 1       ;
 ; i2cSlave:inst2|sclDelayed~6                                          ; 1       ;
 ; i2cSlave:inst2|sclDelayed[2]                                         ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector4~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[3]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector4~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[3]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[3]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~8            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[2]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[1]           ; 1       ;
 ; i2cSlave:inst2|sclDelayed~5                                          ; 1       ;
 ; i2cSlave:inst2|sclDelayed[3]                                         ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector3~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[4]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector3~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[4]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[4]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~7            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[3]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[2]           ; 1       ;
 ; i2cSlave:inst2|sclDelayed~4                                          ; 1       ;
 ; i2cSlave:inst2|sclDelayed[4]                                         ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector2~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[5]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector2~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[5]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[5]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~6            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[4]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[3]           ; 1       ;
@@ -959,14 +978,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|sdaDelayed~3                                          ; 1       ;
 ; i2cSlave:inst2|sclPipe~9                                             ; 1       ;
 ; i2cSlave:inst2|sdaPipe~9                                             ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~7      ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~5      ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~3      ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector1~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[6]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector1~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[6]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[6]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~5            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[5]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[4]           ; 1       ;
@@ -996,10 +1009,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|sdaPipe~0                                             ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~43   ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector0~3     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg3[7]       ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|Selector0~2     ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg1[7]       ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|myReg2[7]       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~4            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[6]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]           ; 1       ;
@@ -1032,7 +1042,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~34   ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~33   ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~32   ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]~2         ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]~2         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData~1            ; 1       ;
 ; i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[7]      ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]           ; 1       ;
@@ -1069,15 +1079,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[0]~8         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~7         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~6         ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~3         ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~3         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|WideOr6~2           ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|WideOr6~1           ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]~2         ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]~2         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|Add1~0              ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~28   ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~5         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~4         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~3         ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]~2         ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|rxData~0            ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|sdaOut~0            ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|Selector24~4        ; 1       ;
@@ -1095,16 +1105,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~2           ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|writeEn~1           ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|writeEn~0           ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~10       ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[7]~12       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|dataOut~0           ; 1       ;
+; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~5      ; 1       ;
 ; clockDivider:inst1|newClk~0                                          ; 1       ;
 ; clockDivider:inst1|Equal0~1                                          ; 1       ;
 ; clockDivider:inst1|Equal0~0                                          ; 1       ;
-; i2cSlave:inst2|registerInterface:u_registerInterface|Decoder0~1      ; 1       ;
+; pwm_generator:inst5|pwm_next~0                                       ; 1       ;
+; pwm_generator:inst5|WideOr0~1                                        ; 1       ;
+; pwm_generator:inst5|WideOr0~0                                        ; 1       ;
+; pwm_generator:inst6|pwm_next~0                                       ; 1       ;
+; pwm_generator:inst6|WideOr0~1                                        ; 1       ;
+; pwm_generator:inst6|WideOr0~0                                        ; 1       ;
+; pwm_generator:inst3|pwm_next~0                                       ; 1       ;
+; pwm_generator:inst3|WideOr0~1                                        ; 1       ;
+; pwm_generator:inst3|WideOr0~0                                        ; 1       ;
 ; clockDivider:inst1|newClk                                            ; 1       ;
 ; pwm_generator:inst|pwm_next~0                                        ; 1       ;
 ; pwm_generator:inst|WideOr0~1                                         ; 1       ;
 ; pwm_generator:inst|WideOr0~0                                         ; 1       ;
+; pwm_generator:inst5|pwm                                              ; 1       ;
+; pwm_generator:inst6|pwm                                              ; 1       ;
+; pwm_generator:inst3|pwm                                              ; 1       ;
 ; pwm_generator:inst|pwm                                               ; 1       ;
 ; clockDivider:inst1|count[8]~22                                       ; 1       ;
 ; clockDivider:inst1|count[7]~21                                       ; 1       ;
@@ -1132,23 +1154,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[3]~16       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[2]~15       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[2]~14       ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]~13       ; 1       ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]~12       ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]~11       ; 1       ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[1]~10       ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[0]~9        ; 1       ;
 ; i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[0]~8        ; 1       ;
-; pwm_generator:inst|count[7]~19                                       ; 1       ;
-; pwm_generator:inst|count[6]~18                                       ; 1       ;
-; pwm_generator:inst|count[6]~17                                       ; 1       ;
-; pwm_generator:inst|count[5]~16                                       ; 1       ;
-; pwm_generator:inst|count[5]~15                                       ; 1       ;
-; pwm_generator:inst|count[4]~14                                       ; 1       ;
-; pwm_generator:inst|count[4]~13                                       ; 1       ;
-; pwm_generator:inst|count[3]~12                                       ; 1       ;
-; pwm_generator:inst|count[3]~11                                       ; 1       ;
-; pwm_generator:inst|count[2]~10                                       ; 1       ;
-; pwm_generator:inst|count[2]~9                                        ; 1       ;
-; pwm_generator:inst|count[1]~8                                        ; 1       ;
-; pwm_generator:inst|count[1]~7                                        ; 1       ;
+; pwm_generator:inst3|count[7]~19                                      ; 1       ;
+; pwm_generator:inst3|count[6]~18                                      ; 1       ;
+; pwm_generator:inst3|count[6]~17                                      ; 1       ;
+; pwm_generator:inst3|count[5]~16                                      ; 1       ;
+; pwm_generator:inst3|count[5]~15                                      ; 1       ;
+; pwm_generator:inst3|count[4]~14                                      ; 1       ;
+; pwm_generator:inst3|count[4]~13                                      ; 1       ;
+; pwm_generator:inst3|count[3]~12                                      ; 1       ;
+; pwm_generator:inst3|count[3]~11                                      ; 1       ;
+; pwm_generator:inst3|count[2]~10                                      ; 1       ;
+; pwm_generator:inst3|count[2]~9                                       ; 1       ;
+; pwm_generator:inst3|count[1]~8                                       ; 1       ;
+; pwm_generator:inst3|count[1]~7                                       ; 1       ;
+; pwm_generator:inst5|LessThan0~14                                     ; 1       ;
+; pwm_generator:inst5|LessThan0~13                                     ; 1       ;
+; pwm_generator:inst5|LessThan0~11                                     ; 1       ;
+; pwm_generator:inst5|LessThan0~9                                      ; 1       ;
+; pwm_generator:inst5|LessThan0~7                                      ; 1       ;
+; pwm_generator:inst5|LessThan0~5                                      ; 1       ;
+; pwm_generator:inst5|LessThan0~3                                      ; 1       ;
+; pwm_generator:inst5|LessThan0~1                                      ; 1       ;
+; pwm_generator:inst6|LessThan0~14                                     ; 1       ;
+; pwm_generator:inst6|LessThan0~13                                     ; 1       ;
+; pwm_generator:inst6|LessThan0~11                                     ; 1       ;
+; pwm_generator:inst6|LessThan0~9                                      ; 1       ;
+; pwm_generator:inst6|LessThan0~7                                      ; 1       ;
+; pwm_generator:inst6|LessThan0~5                                      ; 1       ;
+; pwm_generator:inst6|LessThan0~3                                      ; 1       ;
+; pwm_generator:inst6|LessThan0~1                                      ; 1       ;
+; pwm_generator:inst3|LessThan0~14                                     ; 1       ;
+; pwm_generator:inst3|LessThan0~13                                     ; 1       ;
+; pwm_generator:inst3|LessThan0~11                                     ; 1       ;
+; pwm_generator:inst3|LessThan0~9                                      ; 1       ;
+; pwm_generator:inst3|LessThan0~7                                      ; 1       ;
+; pwm_generator:inst3|LessThan0~5                                      ; 1       ;
+; pwm_generator:inst3|LessThan0~3                                      ; 1       ;
+; pwm_generator:inst3|LessThan0~1                                      ; 1       ;
 ; pwm_generator:inst|LessThan0~14                                      ; 1       ;
 ; pwm_generator:inst|LessThan0~13                                      ; 1       ;
 ; pwm_generator:inst|LessThan0~11                                      ; 1       ;
@@ -1165,23 +1211,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 304 / 71,559 ( < 1 % ) ;
-; C16 interconnects     ; 7 / 2,597 ( < 1 % )    ;
-; C4 interconnects      ; 79 / 46,848 ( < 1 % )  ;
-; Direct links          ; 82 / 71,559 ( < 1 % )  ;
+; Block interconnects   ; 365 / 71,559 ( < 1 % ) ;
+; C16 interconnects     ; 10 / 2,597 ( < 1 % )   ;
+; C4 interconnects      ; 101 / 46,848 ( < 1 % ) ;
+; Direct links          ; 102 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 3 / 20 ( 15 % )        ;
-; Local interconnects   ; 162 / 24,624 ( < 1 % ) ;
-; R24 interconnects     ; 5 / 2,496 ( < 1 % )    ;
-; R4 interconnects      ; 154 / 62,424 ( < 1 % ) ;
+; Local interconnects   ; 180 / 24,624 ( < 1 % ) ;
+; R24 interconnects     ; 6 / 2,496 ( < 1 % )    ;
+; R4 interconnects      ; 224 / 62,424 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.33) ; Number of LABs  (Total = 18) ;
+; Number of Logic Elements  (Average = 15.18) ; Number of LABs  (Total = 17) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
+; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
@@ -1189,37 +1235,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 2                            ;
-; 13                                          ; 1                            ;
-; 14                                          ; 1                            ;
-; 15                                          ; 1                            ;
-; 16                                          ; 9                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 2                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 3                            ;
+; 16                                          ; 11                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.33) ; Number of LABs  (Total = 18) ;
+; LAB-wide Signals  (Average = 1.47) ; Number of LABs  (Total = 17) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 2                            ;
-; 1 Clock                            ; 16                           ;
-; 1 Clock enable                     ; 3                            ;
-; 1 Sync. load                       ; 2                            ;
-; 2 Clocks                           ; 1                            ;
+; 1 Async. clear                     ; 5                            ;
+; 1 Clock                            ; 13                           ;
+; 1 Clock enable                     ; 2                            ;
+; 1 Sync. load                       ; 1                            ;
+; 2 Clocks                           ; 4                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 21.72) ; Number of LABs  (Total = 18) ;
+; Number of Signals Sourced  (Average = 23.00) ; Number of LABs  (Total = 17) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
@@ -1230,63 +1276,60 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 3                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 1                            ;
 ; 21                                           ; 1                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 1                            ;
-; 28                                           ; 2                            ;
-; 29                                           ; 0                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 2                            ;
+; 26                                           ; 2                            ;
+; 27                                           ; 3                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.22) ; Number of LABs  (Total = 18) ;
+; Number of Signals Sourced Out  (Average = 9.18) ; Number of LABs  (Total = 17) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 3                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 1                            ;
-; 4                                               ; 0                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 2                            ;
 ; 5                                               ; 0                            ;
 ; 6                                               ; 0                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 2                            ;
-; 9                                               ; 2                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 4                            ;
 ; 10                                              ; 2                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 1                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 2                            ;
+; 14                                              ; 0                            ;
 ; 15                                              ; 1                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 15.17) ; Number of LABs  (Total = 18) ;
+; Number of Distinct Inputs  (Average = 18.82) ; Number of LABs  (Total = 17) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 0                            ;
 ; 2                                            ; 1                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 2                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
@@ -1294,24 +1337,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
-; 14                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 3                            ;
+; 16                                           ; 2                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 1                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
 ; 27                                           ; 0                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 1                            ;
+; 28                                           ; 2                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 0                            ;
+; 33                                           ; 0                            ;
+; 34                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1372,11 +1420,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 6         ; 0            ; 6         ; 0            ; 0            ; 6         ; 6         ; 0            ; 6         ; 6         ; 0            ; 2            ; 0            ; 0            ; 5            ; 0            ; 2            ; 5            ; 0            ; 0            ; 1            ; 2            ; 0            ; 0            ; 0            ; 0            ; 0            ; 6         ; 0            ; 0            ;
+; Total Pass         ; 9         ; 0            ; 9         ; 0            ; 0            ; 9         ; 9         ; 0            ; 9         ; 9         ; 0            ; 5            ; 0            ; 0            ; 5            ; 0            ; 5            ; 5            ; 0            ; 0            ; 1            ; 5            ; 0            ; 0            ; 0            ; 0            ; 0            ; 9         ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 6            ; 0         ; 6            ; 6            ; 0         ; 0         ; 6            ; 0         ; 0         ; 6            ; 4            ; 6            ; 6            ; 1            ; 6            ; 4            ; 1            ; 6            ; 6            ; 5            ; 4            ; 6            ; 6            ; 6            ; 6            ; 6            ; 0         ; 6            ; 6            ;
+; Total Inapplicable ; 0         ; 9            ; 0         ; 9            ; 9            ; 0         ; 0         ; 9            ; 0         ; 0         ; 9            ; 4            ; 9            ; 9            ; 4            ; 9            ; 4            ; 4            ; 9            ; 9            ; 8            ; 4            ; 9            ; 9            ; 9            ; 9            ; 9            ; 0         ; 9            ; 9            ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; PQM_out            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; chan1              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; chan2              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; chan3              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; chan4              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SDA                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; enable             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1437,16 +1488,16 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------------+---------------------------+-------------------+
 ; Source Register             ; Destination Register      ; Delay Added in ns ;
 +-----------------------------+---------------------------+-------------------+
-; clockDivider:inst1|newClk   ; clockDivider:inst1|newClk ; 2.485             ;
-; clockDivider:inst1|count[8] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[6] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[5] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[4] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[3] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[2] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[1] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[0] ; clockDivider:inst1|newClk ; 0.219             ;
-; clockDivider:inst1|count[7] ; clockDivider:inst1|newClk ; 0.219             ;
+; clockDivider:inst1|newClk   ; clockDivider:inst1|newClk ; 2.510             ;
+; clockDivider:inst1|count[8] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[6] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[5] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[4] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[3] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[2] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[1] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[0] ; clockDivider:inst1|newClk ; 0.220             ;
+; clockDivider:inst1|count[7] ; clockDivider:inst1|newClk ; 0.220             ;
 +-----------------------------+---------------------------+-------------------+
 Note: This table only shows the top 10 path(s) that have the largest delay added for hold.
 
@@ -1501,7 +1552,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1510,9 +1561,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 976 megabytes
-    Info: Processing ended: Thu Nov 10 21:06:50 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Processing ended: Fri Nov 11 11:56:27 2016
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+

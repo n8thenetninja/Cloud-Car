@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ServoController
-Thu Nov 10 21:06:39 2016
+Fri Nov 11 11:56:16 2016
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -19,10 +19,13 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: pwm_generator:inst
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: pwm_generator:inst3
+ 15. Parameter Settings for User Entity Instance: pwm_generator:inst6
+ 16. Parameter Settings for User Entity Instance: pwm_generator:inst5
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,16 +52,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 10 21:06:39 2016      ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 11 11:56:16 2016      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ServoController                            ;
 ; Top-level Entity Name              ; ServoController                            ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 259                                        ;
-;     Total combinational functions  ; 226                                        ;
-;     Dedicated logic registers      ; 158                                        ;
-; Total registers                    ; 158                                        ;
-; Total pins                         ; 6                                          ;
+; Total logic elements               ; 290                                        ;
+;     Total combinational functions  ; 257                                        ;
+;     Dedicated logic registers      ; 161                                        ;
+; Total registers                    ; 161                                        ;
+; Total pins                         ; 9                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -185,30 +188,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 259       ;
+; Estimated Total logic elements              ; 290       ;
 ;                                             ;           ;
-; Total combinational functions               ; 226       ;
+; Total combinational functions               ; 257       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 134       ;
-;     -- 3 input functions                    ; 29        ;
-;     -- <=2 input functions                  ; 63        ;
+;     -- 4 input functions                    ; 141       ;
+;     -- 3 input functions                    ; 50        ;
+;     -- <=2 input functions                  ; 66        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 199       ;
-;     -- arithmetic mode                      ; 27        ;
+;     -- normal mode                          ; 209       ;
+;     -- arithmetic mode                      ; 48        ;
 ;                                             ;           ;
-; Total registers                             ; 158       ;
-;     -- Dedicated logic registers            ; 158       ;
+; Total registers                             ; 161       ;
+;     -- Dedicated logic registers            ; 161       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 6         ;
+; I/O pins                                    ; 9         ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 149       ;
-; Total fan-out                               ; 1176      ;
-; Average fan-out                             ; 2.96      ;
+; Total fan-out                               ; 1288      ;
+; Average fan-out                             ; 2.95      ;
 +---------------------------------------------+-----------+
 
 
@@ -217,12 +220,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Library Name ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
-; |ServoController                              ; 226 (0)           ; 158 (0)      ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |ServoController                                                      ; work         ;
+; |ServoController                              ; 257 (0)           ; 161 (0)      ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |ServoController                                                      ; work         ;
 ;    |clockDivider:inst1|                       ; 12 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|clockDivider:inst1                                   ; work         ;
-;    |i2cSlave:inst2|                           ; 195 (49)          ; 139 (41)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2                                       ; work         ;
-;       |registerInterface:u_registerInterface| ; 33 (33)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
+;    |i2cSlave:inst2|                           ; 193 (49)          ; 139 (41)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2                                       ; work         ;
+;       |registerInterface:u_registerInterface| ; 31 (31)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface ; work         ;
 ;       |serialInterface:u_serialInterface|     ; 113 (113)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface     ; work         ;
-;    |pwm_generator:inst|                       ; 19 (19)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst                                   ; work         ;
+;    |pwm_generator:inst3|                      ; 19 (19)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst3                                  ; work         ;
+;    |pwm_generator:inst5|                      ; 11 (11)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst5                                  ; work         ;
+;    |pwm_generator:inst6|                      ; 11 (11)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst6                                  ; work         ;
+;    |pwm_generator:inst|                       ; 11 (11)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ServoController|pwm_generator:inst                                   ; work         ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -265,19 +271,43 @@ Encoding Type:  One-Hot
 +---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                     ;
-+-------------------------------------------------------------------+--------------------+
-; Register name                                                     ; Reason for Removal ;
-+-------------------------------------------------------------------+--------------------+
-; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~2       ; Lost fanout        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~3       ; Lost fanout        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~2 ; Lost fanout        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~3 ; Lost fanout        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~4 ; Lost fanout        ;
-; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~5 ; Lost fanout        ;
-; Total Number of Removed Registers = 6                             ;                    ;
-+-------------------------------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                           ;
++-------------------------------------------------------------------+------------------------------------------+
+; Register name                                                     ; Reason for Removal                       ;
++-------------------------------------------------------------------+------------------------------------------+
+; pwm_generator:inst5|count[7]                                      ; Merged with pwm_generator:inst3|count[7] ;
+; pwm_generator:inst6|count[7]                                      ; Merged with pwm_generator:inst3|count[7] ;
+; pwm_generator:inst|count[7]                                       ; Merged with pwm_generator:inst3|count[7] ;
+; pwm_generator:inst5|count[6]                                      ; Merged with pwm_generator:inst3|count[6] ;
+; pwm_generator:inst6|count[6]                                      ; Merged with pwm_generator:inst3|count[6] ;
+; pwm_generator:inst|count[6]                                       ; Merged with pwm_generator:inst3|count[6] ;
+; pwm_generator:inst5|count[5]                                      ; Merged with pwm_generator:inst3|count[5] ;
+; pwm_generator:inst6|count[5]                                      ; Merged with pwm_generator:inst3|count[5] ;
+; pwm_generator:inst|count[5]                                       ; Merged with pwm_generator:inst3|count[5] ;
+; pwm_generator:inst5|count[4]                                      ; Merged with pwm_generator:inst3|count[4] ;
+; pwm_generator:inst6|count[4]                                      ; Merged with pwm_generator:inst3|count[4] ;
+; pwm_generator:inst|count[4]                                       ; Merged with pwm_generator:inst3|count[4] ;
+; pwm_generator:inst5|count[3]                                      ; Merged with pwm_generator:inst3|count[3] ;
+; pwm_generator:inst6|count[3]                                      ; Merged with pwm_generator:inst3|count[3] ;
+; pwm_generator:inst|count[3]                                       ; Merged with pwm_generator:inst3|count[3] ;
+; pwm_generator:inst5|count[2]                                      ; Merged with pwm_generator:inst3|count[2] ;
+; pwm_generator:inst6|count[2]                                      ; Merged with pwm_generator:inst3|count[2] ;
+; pwm_generator:inst|count[2]                                       ; Merged with pwm_generator:inst3|count[2] ;
+; pwm_generator:inst5|count[1]                                      ; Merged with pwm_generator:inst3|count[1] ;
+; pwm_generator:inst6|count[1]                                      ; Merged with pwm_generator:inst3|count[1] ;
+; pwm_generator:inst|count[1]                                       ; Merged with pwm_generator:inst3|count[1] ;
+; pwm_generator:inst5|count[0]                                      ; Merged with pwm_generator:inst3|count[0] ;
+; pwm_generator:inst6|count[0]                                      ; Merged with pwm_generator:inst3|count[0] ;
+; pwm_generator:inst|count[0]                                       ; Merged with pwm_generator:inst3|count[0] ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~2       ; Lost fanout                              ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|streamSt~3       ; Lost fanout                              ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~2 ; Lost fanout                              ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~3 ; Lost fanout                              ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~4 ; Lost fanout                              ;
+; i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt~5 ; Lost fanout                              ;
+; Total Number of Removed Registers = 30                            ;                                          ;
++-------------------------------------------------------------------+------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -285,10 +315,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 158   ;
+; Total registers                              ; 161   ;
 ; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 67    ;
 ; Number of registers using Preset             ; 0     ;
@@ -301,11 +331,11 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ServoController|i2cSlave:inst2|startStopDetState[0]                             ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|txData[6]      ;
-; 256:1              ; 8 bits    ; 1360 LEs      ; 24 LEs               ; 1336 LEs               ; Yes        ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[5] ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|txData[5]      ;
+; 256:1              ; 8 bits    ; 1360 LEs      ; 24 LEs               ; 1336 LEs               ; Yes        ; |ServoController|i2cSlave:inst2|registerInterface:u_registerInterface|dataOut[4] ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|regAddr[5]     ;
 ; 10:1               ; 8 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|rxData[3]      ;
-; 14:1               ; 3 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[1]      ;
+; 14:1               ; 3 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|bitCnt[2]      ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|next_dataOut   ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; No         ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|streamSt       ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |ServoController|i2cSlave:inst2|serialInterface:u_serialInterface|CurrState_SISt ;
@@ -322,14 +352,44 @@ Encoding Type:  One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm_generator:inst3 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; PWM_DEPTH      ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm_generator:inst6 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; PWM_DEPTH      ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm_generator:inst5 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; PWM_DEPTH      ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 6                           ;
-; cycloneiii_ff         ; 158                         ;
-;     CLR               ; 19                          ;
+; boundary_port         ; 9                           ;
+; cycloneiii_ff         ; 161                         ;
+;     CLR               ; 22                          ;
 ;     ENA               ; 57                          ;
 ;     ENA SCLR          ; 2                           ;
 ;     ENA SLD           ; 8                           ;
@@ -337,18 +397,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 2                           ;
 ;     plain             ; 69                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 226                         ;
-;     arith             ; 27                          ;
+; cycloneiii_lcell_comb ; 257                         ;
+;     arith             ; 48                          ;
 ;         2 data inputs ; 18                          ;
-;         3 data inputs ; 9                           ;
-;     normal            ; 199                         ;
+;         3 data inputs ; 30                          ;
+;     normal            ; 209                         ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 40                          ;
+;         2 data inputs ; 43                          ;
 ;         3 data inputs ; 20                          ;
-;         4 data inputs ; 134                         ;
+;         4 data inputs ; 141                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.14                        ;
+; Average LUT depth     ; 2.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -367,7 +427,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Nov 10 21:06:27 2016
+    Info: Processing started: Fri Nov 11 11:56:04 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ServoController -c ServoController
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 0 design units, including 0 entities, in source file i2cslave/trunk/rtl/timescale.v
@@ -404,14 +464,14 @@ Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/ServoController.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 267 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 1 output pins
+    Info (21059): Implemented 4 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 261 logic cells
+    Info (21061): Implemented 292 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 641 megabytes
-    Info: Processing ended: Thu Nov 10 21:06:39 2016
+    Info: Peak virtual memory: 642 megabytes
+    Info: Processing ended: Fri Nov 11 11:56:16 2016
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:29
 
