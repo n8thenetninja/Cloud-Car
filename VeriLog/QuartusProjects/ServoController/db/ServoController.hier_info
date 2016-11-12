@@ -63,6 +63,8 @@ clk => count[5].CLK
 clk => count[6].CLK
 clk => count[7].CLK
 clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
 clk => newClk~reg0.CLK
 reset => count[0].ACLR
 reset => count[1].ACLR
@@ -73,6 +75,8 @@ reset => count[5].ACLR
 reset => count[6].ACLR
 reset => count[7].ACLR
 reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
 reset => newClk~reg0.ACLR
 newClk <= newClk~reg0.DB_MAX_OUTPUT_PORT_TYPE
 

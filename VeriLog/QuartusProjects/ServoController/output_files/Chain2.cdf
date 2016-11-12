@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22) Path("D:/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/") File("4chan.jic") MfrSpec(OpMask(1) SEC_Device(EPCS64) Child_OpMask(1 1));
+		Device PartName(EP4CE22) Path("C:/Users/natha/SeniorProject/Cloud-Car/VeriLog/QuartusProjects/ServoController/output_files/") File("4chan50hz.jic") MfrSpec(OpMask(1) SEC_Device(EPCS64) Child_OpMask(1 1));
 
 ChainEnd;
 

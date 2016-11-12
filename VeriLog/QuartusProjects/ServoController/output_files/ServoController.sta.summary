@@ -3,39 +3,39 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.150
-TNS   : -190.000
+Slack : -2.089
+TNS   : -210.406
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.691
-TNS   : -11.147
+Slack : -1.793
+TNS   : -13.258
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.357
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.360
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -152.000
+TNS   : -154.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
 TNS   : -12.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.855
-TNS   : -156.281
+Slack : -1.812
+TNS   : -174.710
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.414
-TNS   : -8.751
+Slack : -1.475
+TNS   : -10.616
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.311
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
@@ -44,22 +44,22 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -152.000
+TNS   : -154.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
 TNS   : -12.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.739
-TNS   : -48.345
+Slack : -0.694
+TNS   : -58.157
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -0.515
-TNS   : -1.845
+Slack : -0.610
+TNS   : -2.684
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.119
+Slack : 0.110
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
@@ -68,7 +68,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -160.574
+TNS   : -162.742
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000

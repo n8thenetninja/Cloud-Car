@@ -6,12 +6,12 @@ module clockDivider(
 input wire clk,
 input wire reset,
 output reg newClk );
-reg [8:0] count;
+reg [10:0] count;
 
 always@(negedge reset, negedge clk) begin
     if (!reset) begin
       newClk <= 1'b0;
-    end else if (count == 8'b011111111) begin
+    end else if (count == 8'b01111111111) begin
       newClk = ~newClk;
     end
   end
