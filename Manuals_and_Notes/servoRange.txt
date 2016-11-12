@@ -1,0 +1,1 @@
+range at 47.6Hz 0x08-0x1A

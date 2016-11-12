@@ -1,12 +1,18 @@
 |ServoController
-PQM_out <= pwm_generator:inst.pwm
+chan1 <= pwm_generator:inst.pwm
 enable => pwm_generator:inst.rst_n
 enable => clockDivider:inst1.reset
+enable => pwm_generator:inst3.rst_n
+enable => pwm_generator:inst6.rst_n
+enable => pwm_generator:inst5.rst_n
 clk => clockDivider:inst1.clk
 clk => i2cSlave:inst2.clk
 Reset => i2cSlave:inst2.rst
 SCL => i2cSlave:inst2.scl
 SDA <> i2cSlave:inst2.sda
+chan2 <= pwm_generator:inst3.pwm
+chan3 <= pwm_generator:inst6.pwm
+chan4 <= pwm_generator:inst5.pwm
 
 
 |ServoController|pwm_generator:inst
@@ -56,6 +62,9 @@ clk => count[4].CLK
 clk => count[5].CLK
 clk => count[6].CLK
 clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
 clk => newClk~reg0.CLK
 reset => count[0].ACLR
 reset => count[1].ACLR
@@ -65,6 +74,9 @@ reset => count[4].ACLR
 reset => count[5].ACLR
 reset => count[6].ACLR
 reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
 reset => newClk~reg0.ACLR
 newClk <= newClk~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -552,5 +564,119 @@ startStopDetState[1] => Equal1.IN0
 startStopDetState[1] => Equal2.IN0
 startStopDetState[1] => Equal7.IN1
 writeEn <= writeEn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ServoController|pwm_generator:inst3
+pwm <= pwm~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duty_cycle[0] => WideOr0.IN0
+duty_cycle[0] => LessThan0.IN8
+duty_cycle[1] => WideOr0.IN1
+duty_cycle[1] => LessThan0.IN7
+duty_cycle[2] => WideOr0.IN2
+duty_cycle[2] => LessThan0.IN6
+duty_cycle[3] => WideOr0.IN3
+duty_cycle[3] => LessThan0.IN5
+duty_cycle[4] => WideOr0.IN4
+duty_cycle[4] => LessThan0.IN4
+duty_cycle[5] => WideOr0.IN5
+duty_cycle[5] => LessThan0.IN3
+duty_cycle[6] => WideOr0.IN6
+duty_cycle[6] => LessThan0.IN2
+duty_cycle[7] => WideOr0.IN7
+duty_cycle[7] => LessThan0.IN1
+rst_n => count[0].ACLR
+rst_n => count[1].ACLR
+rst_n => count[2].ACLR
+rst_n => count[3].ACLR
+rst_n => count[4].ACLR
+rst_n => count[5].ACLR
+rst_n => count[6].ACLR
+rst_n => count[7].ACLR
+rst_n => pwm~reg0.ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => pwm~reg0.CLK
+
+
+|ServoController|pwm_generator:inst6
+pwm <= pwm~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duty_cycle[0] => WideOr0.IN0
+duty_cycle[0] => LessThan0.IN8
+duty_cycle[1] => WideOr0.IN1
+duty_cycle[1] => LessThan0.IN7
+duty_cycle[2] => WideOr0.IN2
+duty_cycle[2] => LessThan0.IN6
+duty_cycle[3] => WideOr0.IN3
+duty_cycle[3] => LessThan0.IN5
+duty_cycle[4] => WideOr0.IN4
+duty_cycle[4] => LessThan0.IN4
+duty_cycle[5] => WideOr0.IN5
+duty_cycle[5] => LessThan0.IN3
+duty_cycle[6] => WideOr0.IN6
+duty_cycle[6] => LessThan0.IN2
+duty_cycle[7] => WideOr0.IN7
+duty_cycle[7] => LessThan0.IN1
+rst_n => count[0].ACLR
+rst_n => count[1].ACLR
+rst_n => count[2].ACLR
+rst_n => count[3].ACLR
+rst_n => count[4].ACLR
+rst_n => count[5].ACLR
+rst_n => count[6].ACLR
+rst_n => count[7].ACLR
+rst_n => pwm~reg0.ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => pwm~reg0.CLK
+
+
+|ServoController|pwm_generator:inst5
+pwm <= pwm~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duty_cycle[0] => WideOr0.IN0
+duty_cycle[0] => LessThan0.IN8
+duty_cycle[1] => WideOr0.IN1
+duty_cycle[1] => LessThan0.IN7
+duty_cycle[2] => WideOr0.IN2
+duty_cycle[2] => LessThan0.IN6
+duty_cycle[3] => WideOr0.IN3
+duty_cycle[3] => LessThan0.IN5
+duty_cycle[4] => WideOr0.IN4
+duty_cycle[4] => LessThan0.IN4
+duty_cycle[5] => WideOr0.IN5
+duty_cycle[5] => LessThan0.IN3
+duty_cycle[6] => WideOr0.IN6
+duty_cycle[6] => LessThan0.IN2
+duty_cycle[7] => WideOr0.IN7
+duty_cycle[7] => LessThan0.IN1
+rst_n => count[0].ACLR
+rst_n => count[1].ACLR
+rst_n => count[2].ACLR
+rst_n => count[3].ACLR
+rst_n => count[4].ACLR
+rst_n => count[5].ACLR
+rst_n => count[6].ACLR
+rst_n => count[7].ACLR
+rst_n => pwm~reg0.ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => pwm~reg0.CLK
 
 

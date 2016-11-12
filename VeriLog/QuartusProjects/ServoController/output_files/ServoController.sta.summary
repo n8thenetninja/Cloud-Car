@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.080
-TNS   : -190.283
+Slack : -2.089
+TNS   : -210.406
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.264
-TNS   : -6.349
+Slack : -1.793
+TNS   : -13.258
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.344
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.558
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -151.000
+TNS   : -154.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.800
-TNS   : -157.735
+Slack : -1.812
+TNS   : -174.710
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -1.015
-TNS   : -4.678
+Slack : -1.475
+TNS   : -10.616
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.298
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.503
+Slack : 0.320
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -151.000
+TNS   : -154.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.722
-TNS   : -51.093
+Slack : -0.694
+TNS   : -58.157
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:inst1|newClk'
-Slack : -0.245
-TNS   : -0.305
+Slack : -0.610
+TNS   : -2.684
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.163
+Slack : 0.110
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:inst1|newClk'
-Slack : 0.299
+Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -159.901
+TNS   : -162.742
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:inst1|newClk'
 Slack : -1.000
-TNS   : -9.000
+TNS   : -12.000
 
 ------------------------------------------------------------
