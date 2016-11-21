@@ -37,6 +37,10 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
+import io.vov.vitamio.LibsChecker;
+import io.vov.vitamio.MediaPlayer;
+import io.vov.vitamio.widget.MediaController;
+import io.vov.vitamio.widget.VideoView;
 
 
 public class MainActivity extends Activity implements SensorEventListener, GestureDetector.OnGestureListener {
@@ -51,9 +55,14 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
     private int camY = 17; // Camera position Y
     private int camSenCount = 0; // Sensor output divider counter to slow camera movement
 
+    private String path;
+    private VideoView mVideoView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!LibsChecker.checkVitamioLibs(this))
+            return;
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -64,22 +73,27 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
         tilt = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); // Steering seneor
         DetectMe = new GestureDetectorCompat(this,this); // Camera movement gesture detector
 
-/*
-        try {
-            DatagramSocket s = new DatagramSocket();
-        } catch (SocketException e) {
-            e.printStackTrace();
-        }
-        try {
-            InetAddress local = InetAddress.getByName("192.168.1.119");
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-        //int msg_length = messageStr.length();
-        //byte[] message = messageStr.getBytes();
-        //DatagramPacket p = new DatagramPacket(message, msg_length, local, server_port);
-        //s.send(p);
-*/
+        mVideoView = (VideoView) findViewById(R.id.vitamio_videoView);
+        path = "rtsp://192.168.1.119:8555/unicast";
+        mVideoView.setVideoPath(path);
+
+        mVideoView.setHardwareDecoder(true);
+        //mVideoView.setBufferSize(5);
+        //mVideoView.setDrawingCacheEnabled(true);
+        //mVideoView.setMediaController(new MediaController(this));
+        mVideoView.requestFocus();
+        throttle.requestFocus();
+
+
+        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                             @Override
+                                             public void onPrepared(MediaPlayer mediaPlayer) {
+                                                 mediaPlayer.setPlaybackSpeed(1.0f);
+                                                 mediaPlayer.setBufferSize(50);
+
+                                             }
+        });
+
         throttle.setOnSeekBarChangeListener( // Seekbar listener for throttle slider
                 new SeekBar.OnSeekBarChangeListener() {
                     //int redValue;
@@ -238,6 +252,8 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
                 }
             }
         }).start();
+        Thread.currentThread().interrupted();
+
 
     }
 
