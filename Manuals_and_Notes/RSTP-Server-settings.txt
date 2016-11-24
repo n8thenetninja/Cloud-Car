@@ -1,0 +1,2 @@
+./h264_v4l2_rtspserver -F 25 -W 640 -H 480 -P 8555 /dev/video0
+

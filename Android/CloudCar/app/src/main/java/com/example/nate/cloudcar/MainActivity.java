@@ -78,18 +78,19 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
         mVideoView.setVideoPath(path);
 
         mVideoView.setHardwareDecoder(true);
-        //mVideoView.setBufferSize(5);
+        mVideoView.setBufferSize(50);
         //mVideoView.setDrawingCacheEnabled(true);
         //mVideoView.setMediaController(new MediaController(this));
         mVideoView.requestFocus();
-        throttle.requestFocus();
+        //throttle.requestFocus();
 
 
         mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                                              @Override
                                              public void onPrepared(MediaPlayer mediaPlayer) {
                                                  mediaPlayer.setPlaybackSpeed(1.0f);
-                                                 mediaPlayer.setBufferSize(50);
+                                                 //mediaPlayer.setBufferSize(50);
+
 
                                              }
         });
