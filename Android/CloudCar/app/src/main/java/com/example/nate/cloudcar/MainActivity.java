@@ -74,7 +74,7 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
         DetectMe = new GestureDetectorCompat(this,this); // Camera movement gesture detector
 
         mVideoView = (VideoView) findViewById(R.id.vitamio_videoView);
-        path = "rtsp://192.168.1.119:8555/unicast";
+        path = "rtsp://192.168.10.200:8555/unicast";
         mVideoView.setVideoPath(path);
 
         mVideoView.setHardwareDecoder(true);
@@ -235,7 +235,7 @@ public class MainActivity extends Activity implements SensorEventListener, Gestu
                 try {
                     int msgLength = chan.length();
                     DatagramSocket s = new DatagramSocket();
-                    InetAddress local = InetAddress.getByName("192.168.1.119");
+                    InetAddress local = InetAddress.getByName("192.168.10.200");
                     byte[] message = chan.getBytes();
                     DatagramPacket chanPacket = new DatagramPacket(message,msgLength,local,server_port);
                     s.send(chanPacket);
