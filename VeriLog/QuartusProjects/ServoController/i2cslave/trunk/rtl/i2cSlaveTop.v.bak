@@ -1,13 +1,16 @@
 //////////////////////////////////////////////////////////////////////
 ////                                                              ////
-//// registerInterface.v                                          ////
+//// i2cSlaveTop.v                                                   ////
 ////                                                              ////
 //// This file is part of the i2cSlave opencores effort.
 //// <http://www.opencores.org/cores//>                           ////
 ////                                                              ////
-//// Modified by Nathan Larson for the Cloud Car project
-//// 10/21/2016
-////    
+//// Module Description:                                          ////
+//// You will need to modify this file to implement your 
+//// interface.
+////                                                              ////
+//// To Do:                                                       ////
+//// 
 ////                                                              ////
 //// Author(s):                                                   ////
 //// - Steve Fielding, sfielding@base2designs.com                 ////
@@ -42,68 +45,36 @@
 `include "i2cSlave_define.v"
 
 
-module registerInterface (
+module i2cSlaveTop (
   clk,
-  addr,
-  dataIn,
-  writeEn,
-  dataOut,
-  myReg0,
-  myReg1,
-  myReg2,
-  myReg3,
-  myReg4,
-  myReg5,
-  myReg6,
-  myReg7
-
+  rst,
+  sda,
+  scl,
+  myReg0
 );
 input clk;
-input [7:0] addr;
-input [7:0] dataIn;
-input writeEn;
-output [7:0] dataOut;
+input rst;
+inout sda;
+input scl;
 output [7:0] myReg0;
-output [7:0] myReg1;
-output [7:0] myReg2;
-output [7:0] myReg3;
-input [7:0] myReg4;
-input [7:0] myReg5;
-input [7:0] myReg6;
-input [7:0] myReg7;
 
-reg [7:0] dataOut;
-reg [7:0] myReg0;
-reg [7:0] myReg1;
-reg [7:0] myReg2;
-reg [7:0] myReg3;
 
-// --- I2C Read
-always @(posedge clk) begin
-  case (addr)
-    8'h00: dataOut <= myReg0;  
-    8'h01: dataOut <= myReg1;  
-    8'h02: dataOut <= myReg2;  
-    8'h03: dataOut <= myReg3;  
-    8'h04: dataOut <= myReg4;  
-    8'h05: dataOut <= myReg5;  
-    8'h06: dataOut <= myReg6;  
-    8'h07: dataOut <= myReg7;  
-    default: dataOut <= 8'h00;
-  endcase
-end
+i2cSlave u_i2cSlave(
+  .clk(clk),
+  .rst(rst),
+  .sda(sda),
+  .scl(scl),
+  .myReg0(myReg0),
+  .myReg1(),
+  .myReg2(),
+  .myReg3(),
+  .myReg4(8'h12),
+  .myReg5(8'h34),
+  .myReg6(8'h56),
+  .myReg7(8'h78)
 
-// --- I2C Write
-always @(posedge clk) begin
-  if (writeEn == 1'b1) begin
-    case (addr)
-      8'h00: myReg0 <= dataIn;  
-      8'h01: myReg1 <= dataIn;
-      8'h02: myReg2 <= dataIn;
-      8'h03: myReg3 <= dataIn;
-    endcase
-  end
-end
+);
+
 
 endmodule
 

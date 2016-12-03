@@ -1,3 +1,13 @@
+"""
+This script is a test for the Cloud Car servo communications script.
+It sends UDP packets to the Raspberry Pi's local IP address to change
+channel and servo position.
+
+Project: Cloud Car
+Author:  Nathan Larson
+Date: 	 11/12/2016	
+"""
+
 import socket
 
 udp_ip = "192.168.1.119"

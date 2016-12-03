@@ -1,4 +1,6 @@
 // ----------------------- i2cSlave_define.v --------------------
+// Modified by Nathan Larson for the Cloud Car Project
+// Date: 10/21/2016
 
 // stream states
 `define STREAM_IDLE 2'b00

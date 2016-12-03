@@ -5,12 +5,8 @@
 //// This file is part of the i2cSlave opencores effort.
 //// <http://www.opencores.org/cores//>                           ////
 ////                                                              ////
-//// Module Description:                                          ////
-//// You will need to modify this file to implement your 
-//// interface.
-////                                                              ////
-//// To Do:                                                       ////
-//// 
+//// Modified by Nathan Larson for the Cloud Car project
+//// 10/21/2016
 ////                                                              ////
 //// Author(s):                                                   ////
 //// - Steve Fielding, sfielding@base2designs.com                 ////

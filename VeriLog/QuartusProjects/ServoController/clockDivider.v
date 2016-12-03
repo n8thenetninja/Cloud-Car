@@ -1,5 +1,9 @@
 /*
 Clock divider to convert 50MHz to ~200kHz
+
+Project: Cloud Car
+Author:  Nathan Larson
+Date:	   10/22/2016
 */
 
 module clockDivider(
