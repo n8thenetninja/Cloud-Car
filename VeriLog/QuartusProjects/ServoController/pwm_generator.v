@@ -22,9 +22,11 @@ How to create an instance using Verilog 2001 syntax:
 		.clk( <your clock signal> )				// Clock signal
 	);
 
-Note:		Verilog 2001, ANSI C Syntax
-Author:	Mark Young
-Date:		2016/05/19
+Note:						Verilog 2001, ANSI C Syntax
+Original author:		Mark Young
+Date:						2016/05/19
+Adapted by: 			Nathan Larson
+Date: 					2016/10/20
 */
 
 module pwm_generator 

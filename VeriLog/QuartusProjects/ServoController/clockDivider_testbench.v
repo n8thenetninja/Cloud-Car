@@ -1,3 +1,11 @@
+/*
+Test bench for Clock Divider
+
+Project: Cloud Car
+Author:  Nathan Larson
+Date:    10/22/2016
+*/
+
 `timescale 1 ns/ 1 ps
 module clockDivider_testbench();
 
